@@ -53,7 +53,7 @@ const items: MenuProps['items'] = [
           <h2>Welcome</h2>
           
           <Flex align="center" gap={'middle'} justify="space-evenly">
-            <Avatar src={"../profile.jpg"} size={50}/>
+            <Avatar src={"/profile.jpg"} size={50}/>
             <h2>Pepe Ladino</h2>
           </Flex>
 
@@ -69,7 +69,7 @@ const items: MenuProps['items'] = [
 
         <h3>Select the itineraries from the list below</h3>
 
-        <Table<itinerarie> scroll={{ y: 600 }} columns={columns} dataSource={itineraries} />;
+        <Table<itinerarie> scroll={{ y: 400 }} columns={columns} dataSource={itineraries} />;
         
       </Flex>
       
