@@ -75,4 +75,9 @@ The provided JSON file contains two primary collections:
 - Improve the leg detail view by adding more information and enhancing the layout.
 - Provide more thorough comments and documentation throughout the code.
 - Restructure folders and components for better scalability and maintainability.
+---
 
+### Author:
+
+  _Albert Henriquez_ (**@ALHH4472**)
+  
