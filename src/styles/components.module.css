@@ -6,7 +6,6 @@
 
 
 /* itineraries page*/
-
 .searchBar{
     width:30%;;
   }
@@ -36,13 +35,38 @@
     
   }
 
-  
-  .headerContainer {
-    padding: 0;
-    background-color:#FFFFFF;
-  }
-
   .content {
     padding: 2% 5%; 
     overflow-y: scroll;
 }
+
+.table{
+    margin-top: 8%;
+}
+
+/* legs page */
+
+.legCardContainer{
+    width: 400px;;
+    height: 300px;
+    
+  }
+
+  .legCardHead{
+    background-color: #f0f0f0;
+    padding: 3%;
+    border-radius: 20px 20px 0px 0px ;
+    height: 50px;
+    
+  }
+  .idTitle{
+    padding-left: 10%;
+  }
+
+  .logOutButton{
+    color: #828282;
+  }
+
+  .radioButton{
+    transform: scale(1.5)
+  }

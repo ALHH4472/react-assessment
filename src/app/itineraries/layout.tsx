@@ -1,7 +1,6 @@
 
 'use client'
 
-import React, { useState } from 'react';
 
 import { Button, Flex, Layout, Menu,} from 'antd';
 import  ConnectingAirportsIcon from '../../lib/ConnectAirportsIcon'
@@ -10,27 +9,13 @@ import LogOutIcon from '../../lib/LogOutIcon';
 import Image from 'next/image';
 import styles from '../../styles/components.module.css'
 
-
-
 const { Sider,Content } = Layout;
-
-
-const items = [
-  {
-    key: '1',
-    icon:  <ConnectingAirportsIcon/>,
-    label: 'Itineraries',   
-  },
-];
-
 
 
 export default function DashboardLayout({children,
 }: {
   children: React.ReactNode;
 })  {
-
-  const [collapsed, setCollapsed] = useState(false);
   
   return (
     <Layout className={styles.layoutContainer}>
@@ -58,7 +43,7 @@ export default function DashboardLayout({children,
 
             {/*Log out button*/} 
             <Flex vertical className={styles.flexLogout}>
-                <Button className={styles.logOutButton} size='large' color="default" variant="filled" icon= {<LogOutIcon/>}>
+                <Button href='/' className={styles.logOutButton} size='large' color="default" variant="filled" icon= {<LogOutIcon/>}>
                     Log out
                 </Button>
             </Flex>

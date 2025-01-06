@@ -1,7 +1,7 @@
 'use client'
 
 import { Flex,Avatar,Input, MenuProps, Dropdown, Button, Table} from "antd";
-import { raleway } from "../../styles/fonts";
+import { poppins } from "../../styles/fonts";
 import { DollarOutlined, FilterFilled, SearchOutlined, SmileOutlined, StarOutlined } from "@ant-design/icons";
 import { extractItineraries, searchAgencyByName} from "../../data/funtions";
 import { useState } from "react";
@@ -49,7 +49,7 @@ const items: MenuProps['items'] = [
 
       <Flex vertical gap={'large'}>
 
-        <Flex align="center" justify="space-between" className={raleway.className}>
+        <Flex align="center" justify="space-between" className={poppins.className}>
           <h2>Welcome</h2>
           
           <Flex align="center" gap={'middle'} justify="space-evenly">
@@ -67,9 +67,9 @@ const items: MenuProps['items'] = [
             </Dropdown>
         </Flex>
 
-        <h3>Select the itineraries from the list below</h3>
+        <h3 className={poppins.className} >Select the itineraries from the list below</h3>
 
-        <Table<itinerarie> scroll={{ y: 400 }} columns={columns} dataSource={itineraries} />;
+        <Table<itinerarie> scroll={{ y: 500 }} columns={columns} dataSource={itineraries} className={styles.table}/>;
         
       </Flex>
       

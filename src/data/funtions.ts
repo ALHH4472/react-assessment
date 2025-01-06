@@ -1,6 +1,7 @@
 'use client'
 
 import { itinerarie,leg } from "./definitions";
+import  apiResponse from '../data/api.json'
 
 // Extract itineraries from json file
 export function extractItineraries(apiData: any): itinerarie[] {
@@ -28,8 +29,27 @@ export function extractLegs(apiData: any): leg[] {
     }));
 }
 
+// search table results by company name
 export function searchAgencyByName(query: string, apiResponse:itinerarie[]): itinerarie[] {
     return apiResponse.filter((it: itinerarie) =>
         it.agent.toLowerCase().includes(query.toLowerCase())
     );
 }
+
+export function getLegsByIt_id(itinerarieId: string): leg[] {
+
+    //get all components
+    const itineraries = extractItineraries(apiResponse)
+    const legs = extractLegs(apiResponse)
+
+    // search itinerarie by ID
+    const itinerarieEncontrado = itineraries.find(itin => itin.id === itinerarieId);
+  
+    // if dont exist 
+    if (!itinerarieEncontrado) {
+      return [];
+    }
+  
+    // Find the legs
+    return legs.filter(leg => itinerarieEncontrado.legs.includes(leg.id));
+  }
