@@ -3,3 +3,45 @@
 .frontButton {
     width: 200px;;
   }
+
+
+/* itineraries page*/
+
+.searchBar{
+    width:30%;;
+  }
+
+  .layoutContainer {
+    height: 100vh;
+  }
+  
+  .sidebar {
+    position: relative;
+    border-right: 2px solid rgba(68, 99, 146, 0.4) 
+  }
+  
+  .flexContainer{
+    height: 100%;
+  }
+
+  .flexMenu{
+    height: 80%;
+    margin: 5%;
+    
+  }
+
+  .flexLogout{
+    margin: 5%;
+    border-top: 2px solid rgba(51, 253, 142) 
+    
+  }
+
+  
+  .headerContainer {
+    padding: 0;
+    background-color:#FFFFFF;
+  }
+
+  .content {
+    padding: 2% 5%; 
+}

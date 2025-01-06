@@ -7,7 +7,7 @@ export default function Home() {
     <Flex align="center" justify="center" vertical>
         <Image src='logos/auxo.svg' width={500} height={500} alt='Auxo company logo'/>
         
-        <Button href="" className={styles.frontButton}  size="large" color="primary" variant="filled">
+        <Button href="/itineraries" className={styles.frontButton}  size="large" color="primary" variant="filled">
             Start
         </Button>
     </Flex>
